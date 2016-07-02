@@ -5,8 +5,7 @@ ruby "2.2.4"
 gem "faker"
 
 group :development, :test do
-  gem "pry"
-  gem "pry-nav"
+  gem "pry-rails"
 end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
