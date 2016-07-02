@@ -4,6 +4,8 @@ ruby "2.2.4"
 
 gem "faker"
 gem "rails_12factor"
+  gem "rails-perftest"
+  gem "ruby-prof"
 
 group :development, :test do
   gem "pry-rails"
