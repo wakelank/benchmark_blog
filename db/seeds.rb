@@ -15,11 +15,6 @@ end
 end
 
 1000.times do
-  Commet.create(user: User.random, post: random_post, content: Faker::Lorem.paragraph(1, true, 4))
+  Comment.create(user: User.random, post: Post.random, content: Faker::Lorem.paragraph(1, true, 4))
 end
 
-
-def random_post
-  random_number = rand(Post.count)
-  Post.offset(random_number).limit(1)
-end

@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20160702172307) do
   enable_extension "plpgsql"
 
   create_table "comments", force: true do |t|
-    t.string   "content"
+    t.text     "content"
     t.integer  "post_id"
     t.integer  "user_id"
     t.datetime "created_at"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20160702172307) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
-    t.string   "content"
+    t.text     "content"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
