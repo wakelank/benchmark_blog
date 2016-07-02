@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby "2.2.4"
 
 gem "faker"
+gem "rails_12factor"
 
 group :development, :test do
   gem "pry-rails"
