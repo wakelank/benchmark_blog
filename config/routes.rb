@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'users/show'
+
   resources :posts, only: [:index, :show]
+  resources :users, only: [:show]
   root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
