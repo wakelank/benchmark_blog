@@ -7,8 +7,14 @@ gem "rails_12factor"
   gem "rails-perftest"
   gem "ruby-prof"
 
+  gem "actionpack-page_caching"
+
 group :development, :test do
   gem "pry-rails"
+end
+
+group :production do
+  gem "newrelic_rpm"
 end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
