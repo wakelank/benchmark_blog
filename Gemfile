@@ -15,6 +15,7 @@ end
 
 group :production do
   gem "newrelic_rpm"
+  gem "dalli"
 end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
