@@ -7,6 +7,7 @@ gem "rails_12factor"
   gem "rails-perftest"
   gem "ruby-prof"
 
+  gem "actionpack-page_caching"
   gem "actionpack-action_caching"
 
 group :development, :test do
