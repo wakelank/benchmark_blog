@@ -7,4 +7,8 @@ class Post < ActiveRecord::Base
     self.offset(random_number).first
   end
 
+  def self.all_cached
+    Rails.cache.fetch('Post.all') { all }
+  end
+
 end
