@@ -1,7 +1,10 @@
 class PostsController < ApplicationController
-  caches_page :index
+
+  caches_action :index
+  
+
   def index
-    @posts = Post.all_cached
+    @posts = Post.all
   end
 
   def show
